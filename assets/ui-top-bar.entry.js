@@ -1,0 +1,119 @@
+import { r as registerInstance, h } from './index-DUsoYu9r.js';
+
+const topBarCss = () => `.sr-only{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border-width:0 !important}.a11y-sr-only{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border-width:0 !important}:host{display:block;position:sticky;top:0;z-index:1000;width:100%}.top-bar-container{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background-color:#ffffff;border-bottom:1px solid #e5e7eb;transition:all 0.3s ease}.top-bar-container.with-shadow{box-shadow:0 2px 8px rgba(0, 0, 0, 0.1)}.company-section{display:flex;align-items:center;gap:12px;flex-shrink:0}.company-logo{font-size:28px;line-height:1;display:flex;align-items:center;justify-content:center}.company-name{font-size:18px;font-weight:700;color:inherit;white-space:nowrap}.center-section{flex:1;display:flex;align-items:center;justify-content:center;padding:0 24px}.actions-section{display:flex;align-items:center;gap:12px;flex-shrink:0}.action-button{position:relative;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:none;border-radius:8px;background-color:transparent;color:inherit;cursor:pointer;transition:all 0.2s ease}.action-button:hover{background-color:rgba(0, 0, 0, 0.05)}.action-icon{font-size:20px;line-height:1}.action-badge{position:absolute;top:4px;right:4px;min-width:18px;height:18px;padding:0 5px;background-color:#ef4444;color:white;font-size:11px;font-weight:600;border-radius:9px;display:flex;align-items:center;justify-content:center;line-height:1}.user-profile-container{position:relative}.user-profile-button{display:flex;align-items:center;gap:8px;padding:6px 12px;border:none;border-radius:8px;background-color:transparent;color:inherit;cursor:pointer;transition:all 0.2s ease;font-family:inherit}.user-profile-button:hover{background-color:rgba(0, 0, 0, 0.05)}.user-profile-button.active{background-color:rgba(0, 0, 0, 0.08)}.user-avatar{font-size:24px;line-height:1;display:flex;align-items:center;justify-content:center}.user-name{font-size:14px;font-weight:500;color:inherit;white-space:nowrap}.dropdown-arrow{font-size:10px;color:inherit;transition:transform 0.2s ease;display:flex;align-items:center}.dropdown-arrow.open{transform:rotate(180deg)}.user-menu{position:absolute;top:calc(100% + 8px);right:0;min-width:220px;background-color:white;border:1px solid #e5e7eb;border-radius:8px;box-shadow:0 10px 25px rgba(0, 0, 0, 0.1);padding:8px 0;animation:slideDown 0.2s ease;z-index:1001}@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}.menu-item{display:flex;align-items:center;gap:12px;width:100%;padding:10px 16px;border:none;background:none;color:#374151;font-size:14px;text-align:left;cursor:pointer;transition:background-color 0.15s ease;font-family:inherit}.menu-item:hover{background-color:#f3f4f6}.menu-item-icon{font-size:18px;line-height:1;display:flex;align-items:center;justify-content:center;width:20px}.menu-item-label{flex:1;white-space:nowrap}.menu-divider{height:1px;background-color:#e5e7eb;margin:8px 0}@media (max-width: 768px){.top-bar-container{padding:10px 16px}.company-name{font-size:16px}.user-name{display:none}.center-section{padding:0 12px}.action-button{width:36px;height:36px}}@media (max-width: 480px){.company-logo{font-size:24px}.actions-section{gap:8px}}`;
+
+const TopBar = class {
+    constructor(hostRef) {
+        registerInstance(this, hostRef);
+    }
+    /**
+     * Company name
+     */
+    companyName = 'Company Name';
+    /**
+     * Company logo/icon
+     */
+    companyLogo = '🏢';
+    /**
+     * User name
+     */
+    userName = 'John Doe';
+    /**
+     * User avatar/icon
+     */
+    userAvatar = 'user';
+    /**
+     * Library for the company logo/icon
+     */
+    companyLogoLibrary = 'se';
+    /**
+     * Library for the user avatar/icon
+     */
+    userAvatarLibrary = 'se';
+    /**
+     * Default library for actions and menu items
+     */
+    iconLibrary = 'default';
+    /**
+     * Action icons as JSON string
+     */
+    actions = '[]';
+    /**
+     * User menu items as JSON string
+     */
+    userMenuItems = '[]';
+    /**
+     * Background color
+     */
+    backgroundColor = 'var(--background-color)';
+    /**
+     * Text color
+     */
+    textColor = 'var(--text-color)';
+    /**
+     * Show shadow
+     */
+    showShadow = true;
+    isUserMenuOpen = false;
+    userMenuRef;
+    parseActions() {
+        if (typeof this.actions === 'string') {
+            try {
+                return JSON.parse(this.actions);
+            }
+            catch (e) {
+                return [];
+            }
+        }
+        return this.actions;
+    }
+    parseUserMenuItems() {
+        if (typeof this.userMenuItems === 'string') {
+            try {
+                return JSON.parse(this.userMenuItems);
+            }
+            catch (e) {
+                return [];
+            }
+        }
+        return this.userMenuItems;
+    }
+    handleUserProfileClick = () => {
+        this.isUserMenuOpen = !this.isUserMenuOpen;
+    };
+    handleUserMenuItemClick = (item) => {
+        if (item.onClick) {
+            item.onClick();
+        }
+        this.isUserMenuOpen = false;
+    };
+    handleClickOutside = (event) => {
+        if (this.userMenuRef && !this.userMenuRef.contains(event.target)) {
+            this.isUserMenuOpen = false;
+        }
+    };
+    componentDidLoad() {
+        document.addEventListener('click', this.handleClickOutside);
+    }
+    disconnectedCallback() {
+        document.removeEventListener('click', this.handleClickOutside);
+    }
+    render() {
+        const actions = this.parseActions();
+        const userMenuItems = this.parseUserMenuItems();
+        const containerStyle = {
+            backgroundColor: this.backgroundColor,
+            color: this.textColor,
+        };
+        return (h("div", { key: 'b642019eb5d91c4254e7d790487e225b7bee7269', class: {
+                'top-bar-container': true,
+                'with-shadow': this.showShadow,
+            }, style: containerStyle }, h("div", { key: '961ed766a5c2dbcbc83533c2d5cd5d258ea128b4', class: "company-section" }, h("div", { key: '4cee9e5ca502633748006c0ae304a248e5dd31a8', class: "company-logo" }, h("ui-icon", { key: '83f2d81d0272faf2d1b55e2bbad3003b5c4c4ca8', name: this.companyLogo, library: this.companyLogoLibrary, size: "1.5rem" })), h("div", { key: '5e701053945e19bbb59246f36915612a70e3770b', class: "company-name" }, this.companyName)), h("div", { key: 'ba8da231725cd5c7b3add333af87f410228dff04', class: "center-section" }, h("slot", { key: 'daa1a117a240d6d227ac6dc9d6d61a0d5b64c698' })), h("div", { key: '2ae8a945da778abb480e6290ae79d2354f6b7c16', class: "actions-section" }, actions.map(action => (h("ui-button", { key: action.id, class: "action-button", onButtonClick: () => action.onClick?.(), title: action.label, icon: action.icon, iconLibrary: action.iconLibrary || this.iconLibrary, badge: action.badge, variant: "ghost", iconOnly: true }))), h("div", { key: 'ed34f03b16af74bd21423efd4321fbcc15450935', class: "user-profile-container", ref: el => this.userMenuRef = el }, h("ui-button", { key: 'e24b97a236e514de2a66dfa10b3d4801aec39844', class: {
+                'user-profile-button': true,
+                'active': this.isUserMenuOpen,
+            }, onButtonClick: this.handleUserProfileClick, variant: "ghost" }, h("span", { key: 'ea979123dc365794c59b1e809a2324c8435c6488', slot: "prefix", class: "user-avatar" }, h("ui-icon", { key: 'cb6bac6593f55dab233da27c419af9e95ffbde8b', name: this.userAvatar, library: this.userAvatarLibrary, size: "1.5rem" })), h("span", { key: 'bc252a92615113a7cf75e1627d27f6bb025b9e8a', class: "user-name" }, this.userName), h("ui-icon", { key: '992e9f3e21678f742447b98558b2d8590fdb498d', slot: "suffix", name: "chevron-down", library: "lucide", size: "12px", class: { 'open': this.isUserMenuOpen } })), this.isUserMenuOpen && (h("div", { key: 'dc7d0ad0190701385f2541f89ba609fcd3522057', class: "user-menu" }, userMenuItems.map(item => (h("div", { key: item.id }, item.divider ? (h("div", { class: "menu-divider" })) : (h("ui-button", { class: "menu-item", onButtonClick: () => this.handleUserMenuItemClick(item), variant: "ghost", align: "start", fullWidth: true }, item.icon && (h("span", { slot: "prefix", class: "menu-item-icon" }, h("ui-icon", { name: item.icon, library: item.iconLibrary || this.iconLibrary, size: "1.1rem" }))), h("span", { class: "menu-item-label" }, item.label))))))))))));
+    }
+};
+TopBar.style = topBarCss();
+
+export { TopBar as ui_top_bar };

@@ -1,0 +1,72 @@
+.demo-section {
+  /* margin: 20px 0; */
+  display: none;
+}
+
+.demo-section.section-active {
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.theme-switcher {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.theme-switcher button {
+  background-color: #6b7280;
+}
+
+/* Component Navigation Styles */
+.component-nav .nav-btn {
+  padding: 8px 16px;
+  background-color: #e2e8f0;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.component-nav .nav-btn:hover {
+  background-color: #cbd5e1;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+.component-nav .nav-btn.active {
+  background-color: #10b981;
+  color: white;
+  border-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.component-nav .nav-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #1d4ed8;
+  border-radius: 1px;
+}

@@ -1,0 +1,149 @@
+/* Legacy Context Menu Styles (from index.html) */
+.demo-area {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 80px 40px;
+  border: 2px dashed #667eea;
+  cursor: context-menu;
+  transition: all 0.3s ease;
+}
+
+.demo-area:hover {
+  border-color: #764ba2;
+  transform: scale(1.02);
+}
+
+.demo-text {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.context-menu {
+  position: fixed;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 220px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3),
+              0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  z-index: 10000;
+  animation: menuFadeIn 0.15s ease-out;
+  user-select: none;
+}
+
+.context-menu[data-level="1"] {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.context-menu[data-level="2"] {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.context-menu[data-level="3"] {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.context-menu[data-level="4"] {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.context-menu[data-level="5"] {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  position: relative;
+  gap: 10px;
+}
+
+.menu-item:hover:not(.disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(2px);
+}
+
+.menu-item.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.menu-item.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.menu-icon {
+  font-size: 16px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-label {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.submenu-arrow {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-left: auto;
+}
+
+.menu-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 6px 8px;
+}
+
+.level-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10001;
+}
+
+.notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}

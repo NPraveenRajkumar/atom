@@ -1,0 +1,1 @@
+const x={xxxs:"xxxs",xxs:"xxs",xs:"xs",sm:"sm",small:"sm",md:"md",medium:"md",lg:"lg",large:"lg",xl:"xl",xlarge:"xl","extra-large":"xl",extralarge:"xl",xxl:"xxl",xxxl:"xxxl",default:"md"};function l(l,s="md"){const m=String(l??s).trim();return m?x[m.toLowerCase()]??m:s}export{l as n}

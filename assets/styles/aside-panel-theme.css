@@ -1,0 +1,94 @@
+/* Aside Panel Theme Variables (moved to assets for serving) */
+
+/* Light Theme (Default) */
+:root {
+  --aside-overlay-bg: rgba(0, 0, 0, 0.5);
+  --aside-panel-bg: #ffffff;
+  --aside-panel-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --aside-panel-text: #000000;
+  --aside-close-btn-color: #6b7280;
+  --aside-close-btn-hover-color: #111827;
+  --aside-close-btn-hover-bg: #f3f4f6;
+  --aside-close-btn-focus: #10b981;
+  --aside-resize-handle-hover: #10b981;
+  --aside-resize-handle-active: #2563eb;
+  --aside-panel-padding: 24px;
+  --aside-transition-duration: 0.3s;
+  --aside-z-index-overlay: 1500;
+  --aside-z-index-panel: 1501;
+}
+
+/* Dark Theme */
+[data-theme="dark"],
+.dark-theme {
+  --aside-overlay-bg: rgba(0, 0, 0, 0.7);
+  --aside-panel-bg: #1f2937;
+  --aside-panel-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+  --aside-panel-text: #f9fafb;
+  --aside-close-btn-color: #9ca3af;
+  --aside-close-btn-hover-color: #f9fafb;
+  --aside-close-btn-hover-bg: #374151;
+  --aside-close-btn-focus: #60a5fa;
+  --aside-resize-handle-hover: #60a5fa;
+  --aside-resize-handle-active: #10b981;
+}
+
+/* Custom Blue Theme */
+.theme-blue aside-panel {
+  --aside-overlay-bg: rgba(59, 130, 246, 0.2);
+  --aside-panel-bg: #eff6ff;
+  --aside-panel-text: #1e3a8a;
+  --aside-close-btn-color: #10b981;
+  --aside-close-btn-hover-color: #1e40af;
+  --aside-close-btn-hover-bg: #dbeafe;
+  --aside-close-btn-focus: #2563eb;
+  --aside-resize-handle-hover: #10b981;
+  --aside-resize-handle-active: #1d4ed8;
+}
+
+/* Custom Green Theme */
+.theme-green aside-panel {
+  --aside-overlay-bg: rgba(34, 197, 94, 0.2);
+  --aside-panel-bg: #f0fdf4;
+  --aside-panel-text: #14532d;
+  --aside-close-btn-color: #22c55e;
+  --aside-close-btn-hover-color: #15803d;
+  --aside-close-btn-hover-bg: #dcfce7;
+  --aside-close-btn-focus: #16a34a;
+  --aside-resize-handle-hover: #22c55e;
+  --aside-resize-handle-active: #15803d;
+}
+
+/* UI Integration Theme (using existing UI variables) */
+.theme-ui aside-panel {
+  --aside-panel-bg: var(--ui-theme-interactive-background-hover, #ffffff);
+  --aside-panel-text: var(--ui-theme-text-standard, #000000);
+  --aside-close-btn-color: var(--ui-theme-text-subdued, #626469);
+  --aside-close-btn-hover-color: var(--ui-theme-text-emphasized, #000000);
+  --aside-close-btn-focus: var(--ui-theme-link-default, #0075A3);
+  --aside-resize-handle-hover: var(--ui-theme-signature-color-default, #008a16);
+  --aside-resize-handle-active: var(--ui-theme-signature-color-pressed, #006b01);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --aside-panel-padding: 16px;
+  }
+}
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --aside-overlay-bg: rgba(0, 0, 0, 0.7);
+    --aside-panel-bg: #1f2937;
+    --aside-panel-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    --aside-panel-text: #f9fafb;
+    --aside-close-btn-color: #9ca3af;
+    --aside-close-btn-hover-color: #f9fafb;
+    --aside-close-btn-hover-bg: #374151;
+    --aside-close-btn-focus: #60a5fa;
+    --aside-resize-handle-hover: #60a5fa;
+    --aside-resize-handle-active: #10b981;
+  }
+}

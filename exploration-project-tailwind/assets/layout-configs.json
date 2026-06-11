@@ -1,0 +1,263 @@
+{
+  "copilot": {
+    "name": "GitHub Copilot Layout",
+    "description": "2-region layout with editor and copilot assistant",
+    "direction": "horizontal",
+    "clearExisting": true,
+    "saveState": false,
+    "regions": [
+      {
+        "id": "editor-region",
+        "title": "Editor",
+        "position": "start",
+        "size": 70,
+        "minSize": 30,
+        "panels": [
+          {
+            "title": "Welcome.js",
+            "icon": "fas fa-code",
+            "closable": true,
+            "content": {
+              "type": "html",
+              "html": "<div style=\"padding:16px;font-family:monospace;background:#0d1117;color:#c9d1d9;height:100%;overflow:auto;\"><div style=\"color:#ff7b72;margin-bottom:8px;\">// Welcome to GitHub Copilot Layout Demo</div><div style=\"color:#8b949e;margin-bottom:16px;\">// This is a 2-region layout (70:30)</div><pre style=\"color:#79c0ff;\">function <span style=\"color:#d2a8ff;\">welcome</span>() {\n  console.<span style=\"color:#d2a8ff;\">log</span>(<span style=\"color:#a5d6ff;\">'🚀 Ready to code with Copilot!'</span>);\n}</pre><div style=\"margin-top:16px;color:#8b949e;\">// Editor Region (70%)</div></div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "copilot-region",
+        "title": "Copilot",
+        "position": "end",
+        "size": 30,
+        "minSize": 20,
+        "panels": [
+          {
+            "title": "GitHub Copilot",
+            "icon": "fas fa-robot",
+            "closable": false,
+            "content": {
+              "type": "html",
+              "html": "<div style=\"padding:16px;background:#1e1e1e;color:#e5e7eb;height:100%;overflow:auto;\"><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:16px;\"><i class=\"fas fa-robot\" style=\"color:#7c3aed;font-size:24px;\"></i><h3 style=\"margin:0;color:#7c3aed;\">GitHub Copilot</h3></div><div style=\"background:#2d2d2d;border-left:3px solid #3DCD58;padding:12px;border-radius:6px;margin-bottom:12px;\"><strong style=\"color:#3DCD58;display:block;margin-bottom:6px;\">👤 You</strong><p style=\"margin:0;\">Can you help me write a function to validate email addresses?</p></div><div style=\"background:#2d2d2d;border-left:3px solid #7c3aed;padding:12px;border-radius:6px;margin-bottom:12px;\"><strong style=\"color:#7c3aed;display:block;margin-bottom:6px;\">🤖 Copilot</strong><p style=\"margin:0 0 8px 0;\">Sure! Here's a function to validate email addresses:</p><pre style=\"background:#0d1117;padding:8px;border-radius:4px;overflow-x:auto;color:#c9d1d9;margin:0;\">function validateEmail(email) {\n  const regex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n  return regex.test(email);\n}</pre></div><div style=\"margin-top:16px;padding:10px;background:rgba(124,58,237,0.1);border-radius:6px;\"><div style=\"display:inline-flex;align-items:center;gap:6px;color:#a78bfa;font-size:12px;\"><i class=\"fas fa-circle\" style=\"font-size:8px;\"></i><span>Copilot Active (30%)</span></div></div></div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ide": {
+    "name": "IDE Layout",
+    "description": "3-region layout: sidebar, editor, tools",
+    "direction": "horizontal",
+    "clearExisting": true,
+    "saveState": false,
+    "regions": [
+      {
+        "id": "sidebar",
+        "title": "Explorer",
+        "position": "start",
+        "size": 20,
+        "minSize": 15,
+        "collapsible": true,
+        "panels": [
+          {
+            "title": "Files",
+            "icon": "fas fa-folder-tree",
+            "closable": false,
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:12px; color: #94a3b8;'>File Explorer Content</div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "editor",
+        "title": "Editor",
+        "position": "start",
+        "size": 60,
+        "minSize": 40,
+        "panels": [
+          {
+            "title": "main.ts",
+            "icon": "fas fa-code",
+            "closable": true,
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:12px;font-family:monospace; color: #94a3b8;'>Code Editor Content</div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tools",
+        "title": "Tools",
+        "position": "end",
+        "size": 20,
+        "minSize": 15,
+        "collapsible": true,
+        "panels": [
+          {
+            "title": "Console",
+            "icon": "fas fa-terminal",
+            "closable": false,
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:12px; color: #94a3b8;'>Console Output Content</div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "dashboard": {
+    "name": "Dashboard Layout",
+    "description": "Grid-style dashboard with multiple widgets",
+    "direction": "horizontal",
+    "clearExisting": true,
+    "saveState": false,
+    "regions": [
+      {
+        "id": "main-dashboard",
+        "title": "Dashboard",
+        "position": "start",
+        "size": 75,
+        "panels": [
+          {
+            "title": "Analytics",
+            "icon": "fas fa-chart-line",
+            "closable": false,
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:24px;text-align:center;'><h2>📊 Analytics Dashboard</h2><p style='color: #94a3b8;'>Your metrics and insights</p></div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sidebar-widgets",
+        "title": "Widgets",
+        "position": "end",
+        "size": 25,
+        "collapsible": true,
+        "panels": [
+          {
+            "title": "Quick Stats",
+            "icon": "fas fa-chart-bar",
+            "closable": false,
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:16px; color: #94a3b8;'><h3>Quick Stats</h3><ul><li>Users: 1,234</li><li>Revenue: $56,789</li></ul></div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "split-view": {
+    "name": "Split View",
+    "description": "Simple 50:50 split",
+    "direction": "horizontal",
+    "clearExisting": true,
+    "saveState": false,
+    "regions": [
+      {
+        "id": "left-split",
+        "title": "Left",
+        "position": "start",
+        "size": 50,
+        "panels": [
+          {
+            "title": "Left Panel",
+            "icon": "fas fa-align-left",
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:24px;text-align:center;'><h2>Left Side</h2></div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "right-split",
+        "title": "Right",
+        "position": "end",
+        "size": 50,
+        "panels": [
+          {
+            "title": "Right Panel",
+            "icon": "fas fa-align-right",
+            "content": {
+              "type": "html",
+              "html": "<div style='padding:24px;text-align:center;'><h2>Right Side</h2></div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "containers": {
+    "name": "Container Types Demo",
+    "description": "Demo showing all 3 custom container types",
+    "direction": "horizontal",
+    "clearExisting": true,
+    "saveState": false,
+    "regions": [
+      {
+        "id": "content-only-region",
+        "title": "Content Only",
+        "type": "content-only",
+        "position": "start",
+        "size": 33.33,
+        "minSize": 20,
+        "panels": [
+          {
+            "title": "Pure Content",
+            "icon": "fas fa-image",
+            "closable": false,
+            "content": {
+              "type": "html",
+              "html": "<div style=\"padding:20px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;\"><i class=\"fas fa-image\" style=\"font-size:48px;margin-bottom:16px;\"></i><h2>Content Only Container</h2><p style=\"text-align:center;margin-top:8px;\">No header, no buttons - just pure HTML content display</p></div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "navigation-region",
+        "title": "Explorer",
+        "type": "navigation",
+        "position": "start",
+        "size": 33.33,
+        "minSize": 20,
+        "panels": [
+          {
+            "title": "Files",
+            "icon": "fas fa-folder",
+            "closable": true,
+            "content": {
+              "type": "html",
+              "html": "<div style=\"padding:12px;background:#0f172a;color:#e5e7eb;height:100%;\"><div style=\"margin-bottom:12px;font-weight:600;color:#10b981;\"><i class=\"fas fa-folder-open\"></i> Project Files</div></div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "header-only-region",
+        "title": "Properties",
+        "type": "header-only",
+        "position": "end",
+        "size": 33.34,
+        "minSize": 20,
+        "panels": [
+          {
+            "title": "Properties",
+            "icon": "fas fa-cog",
+            "closable": true,
+            "content": {
+              "type": "html",
+              "html": "<div style=\"padding:16px;background:#0f172a;color:#e5e7eb;height:100%;\"><h4>Properties Panel</h4></div>"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

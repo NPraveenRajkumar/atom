@@ -1,0 +1,1 @@
+const s=new class{listeners=new Map;on(s,t){const n=this.listeners.get(s)||[];return n.push(t),this.listeners.set(s,n),()=>this.off(s,t)}off(s,t){const n=this.listeners.get(s)||[];this.listeners.set(s,n.filter((s=>s!==t)))}emit(s,...t){const n=this.listeners.get(s)||[];for(const s of n.slice())s(...t)}};export{s as G}

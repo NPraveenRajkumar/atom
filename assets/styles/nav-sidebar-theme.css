@@ -1,0 +1,15 @@
+/* Nav Sidebar Theme (stub) - placed in assets to avoid 404 and allow future customization */
+:root {
+  /* Basic customizable variables for nav sidebar themes */
+  --nav-sidebar-bg: #ffffff;
+  --nav-sidebar-text: #111827;
+  --nav-sidebar-accent: #10b981;
+  --nav-sidebar-border: #e5e7eb;
+}
+
+.dark-theme, [data-theme="dark"] {
+  --nav-sidebar-bg: #1f2937;
+  --nav-sidebar-text: #f9fafb;
+  --nav-sidebar-accent: #60a5fa;
+  --nav-sidebar-border: #374151;
+}

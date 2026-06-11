@@ -1,0 +1,1 @@
+function n(n,t,r){return(n||"")+(t?` ${t}`:"")+(r?` ${r}`:"")}function t(n){if(!n)return"0, 0, 0";let t=n.replace("#","");3===t.length&&(t=t.split("").map((n=>n+n)).join(""));const r=parseInt(t,16);return`${r>>16&255}, ${r>>8&255}, ${255&r}`}export{n as f,t as h}
