@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./index-DGfD7ILf.js";var r={timestamp:`2026-06-09T09:40:22`,compiler:{name:`@stencil/core`,version:`4.43.4`,typescriptVersion:`5.8.3`},components:[{filePath:`src/components/library/category-section.tsx`,encapsulation:`shadow`,tag:`category-section`,readme:`# library-card\r
+import{n as e,r as t,t as n}from"./index-CwBDMu0x.js";var r={timestamp:`2026-06-09T09:40:22`,compiler:{name:`@stencil/core`,version:`4.43.4`,typescriptVersion:`5.8.3`},components:[{filePath:`src/components/library/category-section.tsx`,encapsulation:`shadow`,tag:`category-section`,readme:`# library-card\r
 \r
 \r
 \r`,docs:``,docsTags:[],usage:{},props:[{name:`categoryIcon`,type:`string`,complexType:{original:`string`,resolved:`string`,references:{}},mutable:!1,attr:`category-icon`,reflectToAttr:!1,docs:`Category icon`,docsTags:[{name:`default`,text:`'📦'`}],default:`'📦'`,values:[{type:`string`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`categoryName`,type:`string`,complexType:{original:`string`,resolved:`string`,references:{}},mutable:!1,attr:`category-name`,reflectToAttr:!1,docs:`Category name`,docsTags:[],values:[{type:`string`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`components`,type:`ComponentData[]`,complexType:{original:`ComponentData[]`,resolved:`ComponentData[]`,references:{ComponentData:{location:`import`,path:`./data`,id:`src/components/library/data.ts::ComponentData`,referenceLocation:`ComponentData`}}},mutable:!1,reflectToAttr:!1,docs:`Components in this category`,docsTags:[{name:`default`,text:`[]`}],default:`[]`,values:[{type:`ComponentData[]`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`expanded`,type:`boolean`,complexType:{original:`boolean`,resolved:`boolean`,references:{}},mutable:!0,attr:`expanded`,reflectToAttr:!1,docs:`Whether the section is expanded`,docsTags:[{name:`default`,text:`true`}],default:`true`,values:[{type:`boolean`}],optional:!1,required:!1,getter:!1,setter:!1},{name:`mode`,type:`"demo" | "doc"`,complexType:{original:`'demo' | 'doc'`,resolved:`"demo" | "doc"`,references:{}},mutable:!1,attr:`mode`,reflectToAttr:!1,docs:`Mode: 'demo' or 'doc'`,docsTags:[{name:`default`,text:`'demo'`}],default:`'demo'`,values:[{value:`demo`,type:`string`},{value:`doc`,type:`string`}],optional:!1,required:!1,getter:!1,setter:!1}],methods:[],events:[],listeners:[],styles:[],slots:[],parts:[],states:[],dependents:[`ui-library`],dependencies:[`ui-button`,`library-card`],dependencyGraph:{"category-section":[`ui-button`,`library-card`],"ui-button":[`ui-badge`,`ui-loader`,`ui-icon`],"ui-badge":[`ui-icon`,`ui-button`],"ui-icon":[`ui-loader`],"library-card":[`ui-button`],"ui-library":[`category-section`]}},{filePath:`src/components/layout-manager/layout-manager.tsx`,encapsulation:`none`,tag:`layout-manager`,readme:`# layout-manager\r
@@ -36331,7 +36331,7 @@ const printCurrentTable = function () {\r
               </div>\r
               <p style="font-size:10px; color:#6366f1; font-weight:700; margin:12px 0 0; text-transform:uppercase; letter-spacing:0.05em;">Shimmer Active</p>\r
             </div>\r
-            <div style="background: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80') center/cover; padding:24px; border-radius:16px; text-align:center; position:relative; overflow:hidden;">\r
+            <div style="background: url('/assets/images/nature_forest_1.png') center/cover; padding:24px; border-radius:16px; text-align:center; position:relative; overflow:hidden;">\r
               <div style="position:absolute;inset:0;background:rgba(0,0,0,0.15);"></div>\r
               <h5 style="color:white; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; margin:0 0 16px; position:relative; z-index:1; text-shadow:0 1px 4px rgba(0,0,0,0.4);">Glassmorphism</h5>\r
               <div style="display:flex; gap:12px; justify-content:center; position:relative; z-index:1;">\r
@@ -40255,427 +40255,300 @@ const printCurrentTable = function () {\r
       </div>\r
     \`;
 })();
-<\/script>`}],carousel:[{title:`🎮 Carousel Studio Playground`,description:`Configure all reactive properties of the carousel. The Stencil runtime dynamically updates attributes and re-renders transition pipelines on the fly.`,html:`<div class="demo-block reveal-fade-in" style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:24px; padding:32px; box-shadow:var(--shadow-lg);">
-        <h3 class="specimen-title" style="margin-bottom:8px; font-weight:800; font-size:1.5rem; color:var(--text-primary); display:flex; align-items:center; gap:10px;">
-          <span>🎮 Carousel Studio Playground</span>
-        </h3>
-        <p style="font-size:13px; color:var(--text-secondary); margin-bottom:24px; max-width:600px;">
-          Configure all reactive properties of the carousel. The Stencil runtime dynamically updates attributes and re-renders transition pipelines on the fly.
-        </p>
-
-        <div style="display:grid; grid-template-columns:320px 1fr; gap:32px;">
-          <!-- Controls Panel -->
-          <div class="playground-settings" style="background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:18px; padding:24px; display:flex; flex-direction:column; gap:20px; max-height:720px; overflow-y:auto;">
-            
-            <div>
-              <div style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-primary); margin-bottom:12px; display:flex; align-items:center; gap:6px;">
-                <span>📐 Structure & Feed</span>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px;">
-                <ui-dropdown id="pgSlidesToShow" label="Slides to Show" value="1" size="md" options='[{"label":"1 Slide","value":"1"},{"label":"2 Slides","value":"2"},{"label":"3 Slides","value":"3"},{"label":"4 Slides","value":"4"}]'></ui-dropdown>
-                <ui-dropdown id="pgSlidesToScroll" label="Slides to Scroll" value="1" size="md" options='[{"label":"Scroll 1","value":"1"},{"label":"Scroll 2","value":"2"},{"label":"Scroll 3","value":"3"}]'></ui-dropdown>
-                <ui-dropdown id="pgOrientation" label="Orientation" value="horizontal" size="md" options='[{"label":"Horizontal","value":"horizontal"},{"label":"Vertical","value":"vertical"}]'></ui-dropdown>
-              </div>
-            </div>
-
-            <div>
-              <div style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-primary); margin-bottom:12px; display:flex; align-items:center; gap:6px;">
-                <span>🎬 Motion & Transitions</span>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px;">
-                <ui-dropdown id="pgEffect" label="Transition Effect" value="slide" size="md" options='[
-                  {"label":"Standard Slide","value":"slide"},
-                  {"label":"Cinematic Fade","value":"fade"},
-                  {"label":"3D Cube","value":"cube"},
-                  {"label":"3D Flip","value":"flip"},
-                  {"label":"3D Coverflow","value":"coverflow"},
-                  {"label":"Depth Stack","value":"depth"},
-                  {"label":"Ken-Burns Zoom","value":"ken-burns"},
-                  {"label":"Vertical Wheel","value":"wheel"},
-                  {"label":"Vertical Stack","value":"stack"}
-                ]'></ui-dropdown>
-                <ui-input id="pgDuration" label="Duration (ms)" value="500" size="md"></ui-input>
-                <ui-input id="pgInterval" label="Autoplay Interval (ms)" value="3000" size="md"></ui-input>
-              </div>
-            </div>
-
-            <div>
-              <div style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-primary); margin-bottom:12px; display:flex; align-items:center; gap:6px;">
-                <span>📊 Indicators & Navigation</span>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px;">
-                <ui-dropdown id="pgIndicatorsType" label="Indicators Type" value="dots" size="md" options='[{"label":"Dots Indicator","value":"dots"},{"label":"Stories Segments","value":"segments"},{"label":"Pie Timer","value":"pie"}]'></ui-dropdown>
-                <ui-dropdown id="pgArrowsPosition" label="Arrows Position" value="sides" size="md" options='[{"label":"Sides (Center)","value":"sides"},{"label":"Top Right Group","value":"top-right"}]'></ui-dropdown>
-              </div>
-            </div>
-
-            <div>
-              <div style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-primary); margin-bottom:12px;">
-                <span>⚡ Behavior Flags</span>
-              </div>
-              <div style="display:grid; grid-template-columns:1fr; gap:10px;">
-                <ui-checkbox id="pgAutoplay" label="Auto-play loop" checked size="md"></ui-checkbox>
-                <ui-checkbox id="pgInfinite" label="Infinite scroll" checked size="md"></ui-checkbox>
-                <ui-checkbox id="pgArrows" label="Show Arrows" checked size="md"></ui-checkbox>
-                <ui-checkbox id="pgIndicators" label="Show Indicators" checked size="md"></ui-checkbox>
-                <ui-checkbox id="pgSwipe" label="Touch Swiping" checked size="md"></ui-checkbox>
-                <ui-checkbox id="pgDraggable" label="Mouse Draggable" checked size="md"></ui-checkbox>
-                <ui-checkbox id="pgCenterMode" label="Center Focus (Peek)" size="md"></ui-checkbox>
-                <ui-checkbox id="pgVariableWidth" label="Variable Width" size="md"></ui-checkbox>
-                <ui-checkbox id="pgProgress" label="Autoplay Progress Bar" size="md"></ui-checkbox>
-                <ui-checkbox id="pgCounter" label="Show Slide Counter" size="md"></ui-checkbox>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Preview & Code Output -->
-          <div style="display:flex; flex-direction:column; gap:24px;">
-            <div style="border:1px solid var(--border-default); border-radius:18px; overflow:hidden; background:var(--bg-secondary); padding:24px; display:flex; flex-direction:column; justify-content:center; min-height:420px; position:relative;">
-              <div style="position:absolute; top:12px; left:20px; font-size:11px; font-weight:800; text-transform:uppercase; color:var(--text-secondary); letter-spacing:0.05em;">Live Preview Screen</div>
+<\/script>`}],carousel:[{title:`✨ Elite Material Specimens`,description:`A collection of premium material design substrates and high-end visual patterns optimized for enterprise layouts.`,html:`
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:32px;">
+      <!-- Specimen 1 -->
+      <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
+        <h4 style="margin:0; font-size:14px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
+          <span style="color:#d946ef;">💎</span> Glassmorphic Overlay
+        </h4>
+        <ui-carousel autoplay="true" infinite="true" height="340px" indicators="true" arrows="true" parallax="true" animate-content="true" style="border-radius:16px; overflow:hidden; border:1px solid var(--border-default);">
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute; inset:0; background:linear-gradient(135deg, #1e1b4b 0%, #311042 100%); z-index:1;"></div>
+              <img src="/atom/assets/images/nature_forest_1.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2; opacity:0.6;" onerror="this.style.display='none';" />
               
-              <div id="pgCarouselWrapper" style="width:100%;">
-                <ui-carousel id="pgCarousel" autoplay="true" autoplay-interval="3000" indicators="true" arrows="true" infinite="true" height="340px">
-                  \${pgSlidesHTML}
-                </ui-carousel>
+              <div class="specimen-glass-card" style="position:relative; z-index:10; width:80%; max-width:340px; padding:32px; border-radius:20px; box-shadow:0 20px 50px rgba(0,0,0,0.3); text-align:center; background:rgba(255,255,255,0.1); backdrop-filter:blur(10px);">
+                <div style="background:var(--color-primary); color:white; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; padding:4px 12px; border-radius:20px; width:fit-content; margin:0 auto 16px;">Glass Variant</div>
+                <h3 style="font-size:1.5rem; font-weight:800; margin:0 0 10px; color:white;">Frosted Glass #1</h3>
+                <p style="font-size:13px; opacity:0.8; margin:0; line-height:1.5; color:white;">Backdrop-filter refraction substrate adapting perfectly to theme variables.</p>
               </div>
             </div>
-
-            <div>
-              <ui-code-preview id="carouselCodePreview" label="Implementation Code" expanded="false"></ui-code-preview>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    
-<script>
-(function() {
-  setTimeout(() => {
-      const dropdowns = ['pgSlidesToShow', 'pgSlidesToScroll', 'pgOrientation', 'pgEffect', 'pgIndicatorsType', 'pgArrowsPosition'];
-      const inputs = ['pgDuration', 'pgInterval'];
-      const checkboxes = ['pgAutoplay', 'pgInfinite', 'pgArrows', 'pgIndicators', 'pgSwipe', 'pgDraggable', 'pgCenterMode', 'pgVariableWidth', 'pgProgress', 'pgCounter'];
-
-      dropdowns.forEach(id => document.getElementById(id)?.addEventListener('dropdownChange', () => updateCarouselPlayground()));
-      inputs.forEach(id => document.getElementById(id)?.addEventListener('inputChange', () => updateCarouselPlayground()));
-      checkboxes.forEach(id => document.getElementById(id)?.addEventListener('checkboxChange', () => updateCarouselPlayground()));
-
-      updateCarouselPlayground();
-    }, 100);
-})();
-<\/script>`},{title:`✨ Elite Material Specimens`,description:`A collection of premium material design substrates and high-end visual patterns optimized for enterprise layouts.`,html:`<div class="demo-block reveal-slide-up" style="display:flex; flex-direction:column; gap:40px;">
-        
-        <div>
-          <h3 class="specimen-title" style="margin-bottom:8px; font-weight:800; font-size:1.5rem; color:var(--text-primary);">✨ Elite Material Specimens</h3>
-          <p style="font-size:13px; color:var(--text-secondary); max-width:600px;">
-            A collection of premium material design substrates and high-end visual patterns optimized for enterprise layouts.
-          </p>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:32px;">
-          <!-- Specimen 1: Premium Glassmorphic Parallax -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
-            <h4 style="margin:0; font-size:14px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
-              <span style="color:#d946ef;">💎</span> Glassmorphic Overlay
-            </h4>
-            <ui-carousel autoplay="true" infinite="true" height="340px" indicators="true" arrows="true" parallax="true" animate-content="true" style="border-radius:16px; overflow:hidden; border:1px solid var(--border-default);">
-              \${[1, 2, 3].map(i => 
-<script>
-(function() {
-  <div style="height:100%; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
-                  <div style="position:absolute; inset:0; background:linear-gradient(135deg, #1e1b4b 0%, #311042 100%); z-index:1;"></div>
-                  <img src="\${assetPath}nature_forest_1.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2; opacity:0.6;" onerror="this.style.display='none';" />
-                  
-                  <div class="specimen-glass-card" style="position:relative; z-index:10; width:80%; max-width:340px; padding:32px; border-radius:20px; box-shadow:0 20px 50px rgba(0,0,0,0.3); text-align:center;">
-                    <div style="background:var(--color-primary); color:white; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; padding:4px 12px; border-radius:20px; width:fit-content; margin:0 auto 16px;">Glass Variant</div>
-                    <h3 style="font-size:1.5rem; font-weight:800; margin:0 0 10px; color:var(--text-glass-card);">Frosted Glass #\${i}</h3>
-                    <p style="font-size:13px; opacity:0.8; margin:0; line-height:1.5; color:var(--text-glass-card);">Backdrop-filter refraction substrate adapting perfectly to theme variables.</p>
-                  </div>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-          <!-- Specimen 2: Cinematic Ken-Burns Panning -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
-            <h4 style="margin:0; font-size:14px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
-              <span style="color:#06b6d4;">🎬</span> Ken-Burns Cinematic Panning
-            </h4>
-            <ui-carousel effect="ken-burns" autoplay="true" infinite="true" height="340px" indicators="true" arrows="false" style="border-radius:16px; overflow:hidden; border:1px solid var(--border-default);">
-              \${['nature_desert_3.png', 'nature_ocean_4.png', 'nature_lake_2.png'].map((img, idx) => \`
-                <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white;">
-                  <div style="position:absolute; inset:0; background:linear-gradient(135deg, #124e8c 0%, #0c335e 100%); z-index:1;"></div>
-                  <img src="\${assetPath}\${img}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;" onerror="this.style.display='none';" />
-                  <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85), transparent 70%); z-index:3;"></div>
-                  
-                  <div style="position:relative; z-index:10;">
-                    <div style="font-size:11px; font-weight:800; background:#f59e0b; color:black; padding:3px 10px; border-radius:10px; width:fit-content; margin-bottom:8px;">CINEMATIC VIEW</div>
-                    <h3 style="font-size:1.6rem; font-weight:800; margin:0 0 6px;">Exotic Landscape #\${idx + 1}</h3>
-                    <p style="font-size:13px; opacity:0.8; margin:0; max-width:320px;">Ken-Burns smooth scaling and panning transition layer is applied.</p>
-                  </div>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-        </div>
-
-      </div>
-    \`;
-})();
-<\/script>`},{title:`🎬 High-Performance 3D Transitions`,description:`Leveraging GPU-accelerated CSS 3D transform matrices to deliver incredibly smooth flips, wheel spins, and perspective folds.`,html:`<div class="demo-block reveal-slide-up" style="display:flex; flex-direction:column; gap:40px;">
-        
-        <div>
-          <h3 class="specimen-title" style="margin-bottom:8px; font-weight:800; font-size:1.5rem; color:var(--text-primary);">🎬 High-Performance 3D Transitions</h3>
-          <p style="font-size:13px; color:var(--text-secondary); max-width:600px;">
-            Leveraging GPU-accelerated CSS 3D transform matrices to deliver incredibly smooth flips, wheel spins, and perspective folds.
-          </p>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:32px;">
           
-          <!-- Effect 1: 3D Coverflow -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px; overflow:hidden;">
-            <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; justify-content:space-between;">
-              <span>⚡ 3D Coverflow</span>
-              <span style="color:var(--color-primary); font-size:11px;">effect="coverflow" center-mode="true"</span>
-            </h4>
-            <ui-carousel effect="coverflow" height="280px" autoplay="true" slides-to-show="3" center-mode="true" arrows="false" style="border-radius:16px;">
-              \${[1,2,3,4,5].map(i => 
-<script>
-(function() {
-  <div style="height:100%; padding:0 8px;">
-                  <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #a855f7 0%, #6b21a8 100%); color:white; font-size:2rem; font-weight:800; box-shadow:var(--shadow-md);">
-                    <span>💎 Card \${i}</span>
-                  </div>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-          <!-- Effect 2: 3D Cube -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px; overflow:hidden;">
-            <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; justify-content:space-between;">
-              <span>🧊 3D Cube Rotation</span>
-              <span style="color:var(--color-primary); font-size:11px;">effect="cube"</span>
-            </h4>
-            <ui-carousel effect="cube" height="280px" indicators="true" arrows="true" style="border-radius:16px; overflow:visible;">
-              \${[
-                { bg: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)', label: 'Front Face' },
-                { bg: 'linear-gradient(135deg, #10b981 0%, #047857 100%)', label: 'Right Face' },
-                { bg: 'linear-gradient(135deg, #f59e0b 0%, #b45309 100%)', label: 'Back Face' },
-                { bg: 'linear-gradient(135deg, #ef4444 0%, #b91c1c 100%)', label: 'Left Face' }
-              ].map(face => \`
-                <div style="height:100%; background:\${face.bg}; color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px; box-shadow:var(--shadow-lg);">
-                  <div style="font-size:3rem; margin-bottom:8px;">📦</div>
-                  <h3 style="font-size:1.5rem; font-weight:800; margin:0;">\${face.label}</h3>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-          <!-- Effect 3: 3D Flip -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px; overflow:hidden;">
-            <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; justify-content:space-between;">
-              <span>🎴 3D Perspective Flip</span>
-              <span style="color:var(--color-primary); font-size:11px;">effect="flip"</span>
-            </h4>
-            <ui-carousel effect="flip" height="280px" indicators="true" arrows="true" style="border-radius:16px; overflow:visible;">
-              \${[
-                { bg: 'linear-gradient(135deg, #ec4899 0%, #be185d 100%)', title: 'Interactive Slide A' },
-                { bg: 'linear-gradient(135deg, #8b5cf6 0%, #5b21b6 100%)', title: 'Interactive Slide B' },
-                { bg: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)', title: 'Interactive Slide C' }
-              ].map(slide => \`
-                <div style="height:100%; background:\${slide.bg}; color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px; box-shadow:var(--shadow-lg);">
-                  <div style="font-size:3rem; margin-bottom:8px;">🚀</div>
-                  <h3 style="font-size:1.5rem; font-weight:800; margin:0;">\${slide.title}</h3>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-          <!-- Effect 4: Vertical Wheel -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px; overflow:hidden;">
-            <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; justify-content:space-between;">
-              <span>☸️ 3D Vertical Wheel</span>
-              <span style="color:var(--color-primary); font-size:11px;">effect="wheel" vertical="true"</span>
-            </h4>
-            <ui-carousel effect="wheel" vertical="true" height="280px" autoplay="true" arrows="false" indicators="true" style="border-radius:16px;">
-              \${[1, 2, 3, 4].map(i => \`
-                <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #14b8a6 0%, #0f766e 100%); color:white; font-size:1.8rem; font-weight:800; box-shadow:var(--shadow-md);">
-                  <span>🎡 Rotor Card \${i}</span>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-        </div>
-
-      </div>
-    \`;
-})();
-<\/script>`},{title:`📈 Industrial Ticker & Banners`,description:`Continuous, pixel-perfect scrolling ticker lanes that animate continuously at customizable speeds. Ideal for telemetry monitors, announcement streams, or brand partnerships.`,html:`<div class="demo-block reveal-slide-up" style="display:flex; flex-direction:column; gap:40px;">
-        
-        <div>
-          <h3 class="specimen-title" style="margin-bottom:8px; font-weight:800; font-size:1.5rem; color:var(--text-primary);">📈 Industrial Ticker & Banners</h3>
-          <p style="font-size:13px; color:var(--text-secondary); max-width:600px;">
-            Continuous, pixel-perfect scrolling ticker lanes that animate continuously at customizable speeds. Ideal for telemetry monitors, announcement streams, or brand partnerships.
-          </p>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:32px;">
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute; inset:0; background:linear-gradient(135deg, #1e1b4b 0%, #311042 100%); z-index:1;"></div>
+              <img src="/atom/assets/images/nature_forest_1.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2; opacity:0.6;" onerror="this.style.display='none';" />
+              
+              <div class="specimen-glass-card" style="position:relative; z-index:10; width:80%; max-width:340px; padding:32px; border-radius:20px; box-shadow:0 20px 50px rgba(0,0,0,0.3); text-align:center; background:rgba(255,255,255,0.1); backdrop-filter:blur(10px);">
+                <div style="background:var(--color-primary); color:white; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; padding:4px 12px; border-radius:20px; width:fit-content; margin:0 auto 16px;">Glass Variant</div>
+                <h3 style="font-size:1.5rem; font-weight:800; margin:0 0 10px; color:white;">Frosted Glass #2</h3>
+                <p style="font-size:13px; opacity:0.8; margin:0; line-height:1.5; color:white;">Backdrop-filter refraction substrate adapting perfectly to theme variables.</p>
+              </div>
+            </div>
           
-          <!-- Continuous Telemetry Ticker -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
-                <span style="color:#10b981; display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981; animation:pulse 1.5s infinite;"></span>
-                Live Telemetry Node Ticker
-              </h4>
-              <span style="background:var(--color-primary-subtle, rgba(99,102,241,0.15)); color:var(--color-primary); font-size:10px; font-weight:800; padding:4px 10px; border-radius:10px;">ticker-speed="1.2"</span>
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute; inset:0; background:linear-gradient(135deg, #1e1b4b 0%, #311042 100%); z-index:1;"></div>
+              <img src="/atom/assets/images/nature_forest_1.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2; opacity:0.6;" onerror="this.style.display='none';" />
+              
+              <div class="specimen-glass-card" style="position:relative; z-index:10; width:80%; max-width:340px; padding:32px; border-radius:20px; box-shadow:0 20px 50px rgba(0,0,0,0.3); text-align:center; background:rgba(255,255,255,0.1); backdrop-filter:blur(10px);">
+                <div style="background:var(--color-primary); color:white; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; padding:4px 12px; border-radius:20px; width:fit-content; margin:0 auto 16px;">Glass Variant</div>
+                <h3 style="font-size:1.5rem; font-weight:800; margin:0 0 10px; color:white;">Frosted Glass #3</h3>
+                <p style="font-size:13px; opacity:0.8; margin:0; line-height:1.5; color:white;">Backdrop-filter refraction substrate adapting perfectly to theme variables.</p>
+              </div>
             </div>
-            <ui-carousel ticker="true" ticker-speed="1.2" height="110px" arrows="false" indicators="false" slides-to-show="4" infinite="true" style="border-radius:12px;">
-              \${Array.from({ length: 8 }, (_, i) => 
-<script>
-(function() {
-  <div style="padding:8px; height:100%;">
-                  <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
-                    <div style="width:10px; height:10px; border-radius:50%; background:#10b981;"></div>
-                    <div>
-                      <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_\${i + 1}</div>
-                      <div style="font-size:11px; color:var(--text-secondary);">PING: \${10 + Math.floor(Math.random() * 20)}ms</div>
-                    </div>
-                  </div>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
+          
+        </ui-carousel>
+      </div>
 
-          <!-- Industrial Announcement Banner -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em;">
-                📣 Industrial Warning Banner
-              </h4>
-              <span style="background:rgba(239,68,68,0.15); color:#ef4444; font-size:10px; font-weight:800; padding:4px 10px; border-radius:10px;">ticker-speed="2.5"</span>
+      <!-- Specimen 2 -->
+      <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
+        <h4 style="margin:0; font-size:14px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
+          <span style="color:#06b6d4;">🎬</span> Ken-Burns Cinematic Panning
+        </h4>
+        <ui-carousel effect="ken-burns" autoplay="true" infinite="true" height="340px" indicators="true" arrows="false" style="border-radius:16px; overflow:hidden; border:1px solid var(--border-default);">
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white;">
+              <div style="position:absolute; inset:0; background:linear-gradient(135deg, #124e8c 0%, #0c335e 100%); z-index:1;"></div>
+              <img src="/atom/assets/images/nature_desert_3.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;" onerror="this.style.display='none';" />
+              <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85), transparent 70%); z-index:3;"></div>
+              
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:11px; font-weight:800; background:var(--color-warning); color:black; padding:3px 10px; border-radius:10px; width:fit-content; margin-bottom:8px;">CINEMATIC VIEW</div>
+                <h3 style="font-size:1.6rem; font-weight:800; margin:0 0 6px;">Exotic Landscape #1</h3>
+                <p style="font-size:13px; opacity:0.8; margin:0; max-width:320px;">Ken-Burns smooth scaling and panning transition layer is applied.</p>
+              </div>
             </div>
-            <ui-carousel ticker="true" ticker-speed="2.5" height="80px" arrows="false" indicators="false" infinite="true" style="border-radius:12px;">
-              <div style="padding:10px; height:100%;">
-                <div style="height:100%; background:linear-gradient(to right, #7f1d1d, #ef4444); color:white; display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:800; font-size:1.15rem; letter-spacing:0.05em; padding:0 30px;">
-                  ⚠️ DANGER: UNCOMPRESSIBLE FEED PIPELINE OVERLOAD OVER 98% CAPACITY - SHIELD ACTIVE
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white;">
+              <div style="position:absolute; inset:0; background:linear-gradient(135deg, #124e8c 0%, #0c335e 100%); z-index:1;"></div>
+              <img src="/atom/assets/images/nature_ocean_4.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;" onerror="this.style.display='none';" />
+              <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85), transparent 70%); z-index:3;"></div>
+              
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:11px; font-weight:800; background:var(--color-warning); color:black; padding:3px 10px; border-radius:10px; width:fit-content; margin-bottom:8px;">CINEMATIC VIEW</div>
+                <h3 style="font-size:1.6rem; font-weight:800; margin:0 0 6px;">Exotic Landscape #2</h3>
+                <p style="font-size:13px; opacity:0.8; margin:0; max-width:320px;">Ken-Burns smooth scaling and panning transition layer is applied.</p>
+              </div>
+            </div>
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white;">
+              <div style="position:absolute; inset:0; background:linear-gradient(135deg, #124e8c 0%, #0c335e 100%); z-index:1;"></div>
+              <img src="/atom/assets/images/nature_lake_2.png" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;" onerror="this.style.display='none';" />
+              <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85), transparent 70%); z-index:3;"></div>
+              
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:11px; font-weight:800; background:var(--color-warning); color:black; padding:3px 10px; border-radius:10px; width:fit-content; margin-bottom:8px;">CINEMATIC VIEW</div>
+                <h3 style="font-size:1.6rem; font-weight:800; margin:0 0 6px;">Exotic Landscape #3</h3>
+                <p style="font-size:13px; opacity:0.8; margin:0; max-width:320px;">Ken-Burns smooth scaling and panning transition layer is applied.</p>
+              </div>
+            </div>
+          
+        </ui-carousel>
+      </div>
+    </div>
+  `},{title:`🎬 High-Performance 3D Transitions`,description:`GPU-accelerated CSS 3D transforms for flips, wheels, coverflow, and cubes.`,html:`
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:32px;">
+      
+      <!-- Effect 1: 3D Coverflow -->
+      <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px; overflow:hidden;">
+        <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; justify-content:space-between;">
+          <span>⚡ 3D Coverflow</span>
+        </h4>
+        <ui-carousel effect="coverflow" height="280px" autoplay="true" slides-to-show="3" center-mode="true" arrows="false" style="border-radius:16px;">
+          
+            <div style="height:100%; padding:0 8px;">
+              <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #a855f7 0%, #6b21a8 100%); color:white; font-size:2rem; font-weight:800; box-shadow:var(--shadow-md);">
+                <span>💎 Card 1</span>
+              </div>
+            </div>
+          
+            <div style="height:100%; padding:0 8px;">
+              <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #a855f7 0%, #6b21a8 100%); color:white; font-size:2rem; font-weight:800; box-shadow:var(--shadow-md);">
+                <span>💎 Card 2</span>
+              </div>
+            </div>
+          
+            <div style="height:100%; padding:0 8px;">
+              <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #a855f7 0%, #6b21a8 100%); color:white; font-size:2rem; font-weight:800; box-shadow:var(--shadow-md);">
+                <span>💎 Card 3</span>
+              </div>
+            </div>
+          
+            <div style="height:100%; padding:0 8px;">
+              <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #a855f7 0%, #6b21a8 100%); color:white; font-size:2rem; font-weight:800; box-shadow:var(--shadow-md);">
+                <span>💎 Card 4</span>
+              </div>
+            </div>
+          
+            <div style="height:100%; padding:0 8px;">
+              <div style="height:100%; border-radius:16px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #a855f7 0%, #6b21a8 100%); color:white; font-size:2rem; font-weight:800; box-shadow:var(--shadow-md);">
+                <span>💎 Card 5</span>
+              </div>
+            </div>
+          
+        </ui-carousel>
+      </div>
+
+      <!-- Effect 2: 3D Cube -->
+      <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px; overflow:hidden;">
+        <h4 style="margin:0; font-size:13px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em; display:flex; justify-content:space-between;">
+          <span>🧊 3D Cube Rotation</span>
+        </h4>
+        <ui-carousel effect="cube" height="280px" indicators="true" arrows="true" style="border-radius:16px; overflow:visible;">
+          
+            <div style="height:100%; background:linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px; box-shadow:var(--shadow-lg);">
+              <div style="font-size:3rem; margin-bottom:8px;">📦</div>
+              <h3 style="font-size:1.5rem; font-weight:800; margin:0;">Front Face</h3>
+            </div>
+          
+            <div style="height:100%; background:linear-gradient(135deg, var(--color-success, #10b981) 0%, #047857 100%); color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px; box-shadow:var(--shadow-lg);">
+              <div style="font-size:3rem; margin-bottom:8px;">📦</div>
+              <h3 style="font-size:1.5rem; font-weight:800; margin:0;">Right Face</h3>
+            </div>
+          
+            <div style="height:100%; background:linear-gradient(135deg, #f59e0b 0%, #b45309 100%); color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px; box-shadow:var(--shadow-lg);">
+              <div style="font-size:3rem; margin-bottom:8px;">📦</div>
+              <h3 style="font-size:1.5rem; font-weight:800; margin:0;">Back Face</h3>
+            </div>
+          
+            <div style="height:100%; background:linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px; box-shadow:var(--shadow-lg);">
+              <div style="font-size:3rem; margin-bottom:8px;">📦</div>
+              <h3 style="font-size:1.5rem; font-weight:800; margin:0;">Left Face</h3>
+            </div>
+          
+        </ui-carousel>
+      </div>
+
+    </div>
+  `},{title:`📈 Industrial Ticker & Banners`,description:`Continuous scrolling ticker lanes ideal for telemetry monitors or announcements.`,html:`
+    <div style="display:flex; flex-direction:column; gap:32px;">
+      <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
+        <ui-carousel ticker="true" ticker-speed="1.2" height="110px" arrows="false" indicators="false" slides-to-show="4" infinite="true" style="border-radius:12px;">
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_1</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 22ms</div>
                 </div>
               </div>
-              <div style="padding:10px; height:100%;">
-                <div style="height:100%; background:linear-gradient(to right, #ef4444, #b91c1c); color:white; display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:800; font-size:1.15rem; letter-spacing:0.05em; padding:0 30px;">
-                  ⚡ SYSTEM WARNING: INTEGRATED KINEMATIC MOTORS RUNNING TEMPERATURE EXCEEDS SAFE MARGINS
+            </div>
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_2</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 27ms</div>
                 </div>
               </div>
-            </ui-carousel>
-          </div>
-
-        </div>
-
-      </div>
-    \`;
-})();
-<\/script>`},{title:`📱 Mobile Story Segment Progress`,description:`Configuring stories-style progress segment bars with autoplay tick intervals. Perfect for quick news digests, onboarding tutorials, or reels.`,html:`<div class="demo-block reveal-slide-up" style="display:flex; flex-direction:column; align-items:center; gap:32px;">
-        
-        <div style="text-align:center;">
-          <h3 class="specimen-title" style="margin-bottom:8px; font-weight:800; font-size:1.5rem; color:var(--text-primary);">📱 Mobile Story Segment Progress</h3>
-          <p style="font-size:13px; color:var(--text-secondary); max-width:600px; margin:0 auto;">
-            Configuring stories-style progress segment bars with autoplay tick intervals. Perfect for quick news digests, onboarding tutorials, or reels.
-          </p>
-        </div>
-
-        <!-- Phone Shell Mockup -->
-        <div style="background:var(--bg-secondary); padding:40px; border-radius:40px; border:1px solid var(--border-default); box-shadow:var(--shadow-lg); display:flex; justify-content:center; width:100%; max-width:440px;">
-          <div class="phone-wrap">
-            
-            <ui-carousel indicators="true" indicators-type="segments" autoplay="true" height="100%" effect="fade" infinite="true" autoplay-interval="4000" arrows="false" show-progress="true">
-              \${[
-                { bg: 'linear-gradient(to top, #0f172a, #1e293b)', text: 'Unlock Unlimited Potential', step: '01' },
-                { bg: 'linear-gradient(to top, #1e1b4b, #311042)', text: 'Ultra Lightweight Layouts', step: '02' },
-                { bg: 'linear-gradient(to top, #022c22, #064e3b)', text: 'Pixel Perfect Mechanics', step: '03' },
-                { bg: 'linear-gradient(to top, #3c0764, #12005e)', text: 'Elite Developer Experience', step: '04' }
-              ].map(slide => 
-<script>
-(function() {
-  <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white; background:\${slide.bg};">
-                  <div style="position:absolute; top:-20%; left:-20%; width:100%; height:60%; background:radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%); pointer-events:none;"></div>
-                  
-                  <div style="position:relative; z-index:10;">
-                    <div style="font-size:3rem; font-weight:900; color:rgba(255,255,255,0.15); margin-bottom:12px; letter-spacing:-2px;">STEP \${slide.step}</div>
-                    <h3 style="font-weight:800; font-size:1.6rem; letter-spacing:-0.5px; margin:0 0 12px; line-height:1.2; color:white;">\${slide.text}</h3>
-                    <p style="opacity:0.75; font-size:13px; margin:0 0 24px; line-height:1.5;">Witness the cinematic crossfade and stories segmented progress engine.</p>
-                    
-                    <ui-button label="NEXT TUTORIAL →" size="md" color="primary" variant="solid" style="width:100%;" onclick="this.closest('ui-carousel').next()"></ui-button>
-                  </div>
-                </div>
-              \`).join('')}
-            </ui-carousel>
-
-          </div>
-        </div>
-
-      </div>
-    \`;
-})();
-<\/script>`},{title:`⚡ Advanced Controls & Accessibility`,description:`Enterprise features including peeking center-mode, precise slide counters, mouse dragging, wheel scrolling, and synced carousels.`,html:`<div class="demo-block reveal-slide-up" style="display:flex; flex-direction:column; gap:40px;">
-        
-        <div>
-          <h3 class="specimen-title" style="margin-bottom:8px; font-weight:800; font-size:1.5rem; color:var(--text-primary);">⚡ Advanced Controls & Accessibility</h3>
-          <p style="font-size:13px; color:var(--text-secondary); max-width:600px;">
-            Enterprise features including peeking center-mode, precise slide counters, mouse dragging, wheel scrolling, and synced carousels.
-          </p>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:32px;">
+            </div>
           
-          <!-- Card 1: Center Mode Peeking + Drag -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
-            <h4 style="margin:0; font-size:14px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em;">
-              🖱️ Center Mode Peeking & Dragging
-            </h4>
-            <p style="font-size:12px; color:var(--text-secondary); margin:0;">
-              <code>center-mode</code> allows adjacent slides to partially peek in. Combined with <code>enable-drag</code>, users can swipe cards smoothly.
-            </p>
-            <ui-carousel center-mode="true" center-padding="60px" height="240px" indicators="true" arrows="true" style="border-radius:16px;">
-              \${[1, 2, 3, 4].map(i => 
-<script>
-(function() {
-  <div style="height:100%; padding:0 8px;">
-                  <div style="height:100%; border-radius:12px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:linear-gradient(135deg, #fb7185 0%, #e11d48 100%); color:white; font-size:1.6rem; font-weight:800; box-shadow:var(--shadow-sm);">
-                    <span>📇 Slide \${i}</span>
-                  </div>
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_3</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 23ms</div>
                 </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-          <!-- Card 2: Interactive Counter & Progress Indicators -->
-          <div style="padding:24px; background:var(--bg-secondary); border:1px solid var(--border-default); border-radius:24px; display:flex; flex-direction:column; gap:16px;">
-            <h4 style="margin:0; font-size:14px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.05em;">
-              📊 Slide Counter & Autoplay Progress
-            </h4>
-            <p style="font-size:12px; color:var(--text-secondary); margin:0;">
-              Enable <code>show-counter</code> to render progress counts (e.g. 1 / 4) and <code>show-progress</code> for top-aligned timer bars.
-            </p>
-            <ui-carousel show-counter="true" show-progress="true" autoplay="true" autoplay-interval="4000" height="240px" indicators="true" arrows="true" style="border-radius:16px;">
-              \${['#0284c7', '#059669', '#d97706', '#dc2626'].map((bg, idx) => \`
-                <div style="height:100%; background:\${bg}; color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:16px;">
-                  <h3 style="font-size:1.5rem; font-weight:800; margin:0;">Visual Page #\${idx + 1}</h3>
-                  <p style="font-size:12px; opacity:0.8; margin-top:4px;">Watch the top-aligned linear loader fill up.</p>
+              </div>
+            </div>
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_4</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 21ms</div>
                 </div>
-              \`).join('')}
-            </ui-carousel>
-          </div>
-
-        </div>
-
+              </div>
+            </div>
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_5</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 21ms</div>
+                </div>
+              </div>
+            </div>
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_6</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 10ms</div>
+                </div>
+              </div>
+            </div>
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_7</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 28ms</div>
+                </div>
+              </div>
+            </div>
+          
+            <div style="padding:8px; height:100%;">
+              <div style="background:var(--bg-primary); border:1px solid var(--border-default); border-radius:12px; padding:16px; display:flex; align-items:center; gap:12px; height:100%; box-shadow:var(--shadow-sm);">
+                <div style="width:10px; height:10px; border-radius:50%; background:var(--color-success);"></div>
+                <div>
+                  <div style="font-size:13px; font-weight:800; color:var(--text-primary);">NODE_8</div>
+                  <div style="font-size:11px; color:var(--text-secondary);">PING: 22ms</div>
+                </div>
+              </div>
+            </div>
+          
+        </ui-carousel>
       </div>
-    \`;
-})();
-<\/script>`}],checkbox:[{title:`🎮 Interactive Playground`,description:``,html:`<div class="demo-block reveal-fade-in">\r
+    </div>
+  `},{title:`📱 Mobile Stories`,description:`Mobile-style segmented progress bars with fade effects.`,html:`
+    <div style="background:var(--bg-secondary); padding:40px; border-radius:40px; border:1px solid var(--border-default); display:flex; justify-content:center; max-width:440px; margin:0 auto;">
+      <div style="width:320px; height:580px; border:14px solid #1a1a1a; border-radius:48px; overflow:hidden; background:black; position:relative;">
+        <ui-carousel indicators="true" indicators-type="segments" autoplay="true" height="100%" effect="fade" infinite="true" autoplay-interval="4000" arrows="false" show-progress="true">
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white; background:linear-gradient(to top, #0f172a, #1e293b);">
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:3rem; font-weight:900; color:rgba(255,255,255,0.15); margin-bottom:12px; letter-spacing:-2px;">STEP 01</div>
+                <h3 style="font-weight:800; font-size:1.6rem; margin:0 0 12px; line-height:1.2; color:white;">Unlock Unlimited Potential</h3>
+                <p style="opacity:0.75; font-size:13px; margin:0 0 24px;">Witness the cinematic crossfade and stories segmented progress engine.</p>
+              </div>
+            </div>
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white; background:linear-gradient(to top, #1e1b4b, #311042);">
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:3rem; font-weight:900; color:rgba(255,255,255,0.15); margin-bottom:12px; letter-spacing:-2px;">STEP 02</div>
+                <h3 style="font-weight:800; font-size:1.6rem; margin:0 0 12px; line-height:1.2; color:white;">Ultra Lightweight Layouts</h3>
+                <p style="opacity:0.75; font-size:13px; margin:0 0 24px;">Witness the cinematic crossfade and stories segmented progress engine.</p>
+              </div>
+            </div>
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white; background:linear-gradient(to top, #022c22, #064e3b);">
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:3rem; font-weight:900; color:rgba(255,255,255,0.15); margin-bottom:12px; letter-spacing:-2px;">STEP 03</div>
+                <h3 style="font-weight:800; font-size:1.6rem; margin:0 0 12px; line-height:1.2; color:white;">Pixel Perfect Mechanics</h3>
+                <p style="opacity:0.75; font-size:13px; margin:0 0 24px;">Witness the cinematic crossfade and stories segmented progress engine.</p>
+              </div>
+            </div>
+          
+            <div style="height:100%; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:40px; color:white; background:linear-gradient(to top, #3c0764, #12005e);">
+              <div style="position:relative; z-index:10;">
+                <div style="font-size:3rem; font-weight:900; color:rgba(255,255,255,0.15); margin-bottom:12px; letter-spacing:-2px;">STEP 04</div>
+                <h3 style="font-weight:800; font-size:1.6rem; margin:0 0 12px; line-height:1.2; color:white;">Elite Developer Experience</h3>
+                <p style="opacity:0.75; font-size:13px; margin:0 0 24px;">Witness the cinematic crossfade and stories segmented progress engine.</p>
+              </div>
+            </div>
+          
+        </ui-carousel>
+      </div>
+    </div>
+  `}],checkbox:[{title:`🎮 Interactive Playground`,description:``,html:`<div class="demo-block reveal-fade-in">\r
         <h3 class="specimen-title">🎮 Interactive Playground</h3>\r
         <div class="playground-settings" style="padding: 24px; border-radius: 16px; margin-bottom: 24px;">\r
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">\r
@@ -43492,7 +43365,7 @@ public class HelloWorld {\r
         </div>\r
 \r
         <!-- Branded -->\r
-        <ui-dialog-box id="dBranded" dialog-title="Dream Workspace" header-image="https://primefaces.org/cdn/primereact/images/logo.png" width="400px" ok-text="Explore" cancel-text="Dismiss" icon-library="lucide" resizable="true">\r
+        <ui-dialog-box id="dBranded" dialog-title="Dream Workspace" header-image="/assets/images/logo.png" width="400px" ok-text="Explore" cancel-text="Dismiss" icon-library="lucide" resizable="true">\r
            <div style="padding: 24px;">\r
               <p>Header image automatically injected before the title. Resizing is enabled via the bottom-right corner.</p>\r
            </div>\r
@@ -53666,348 +53539,391 @@ await manager.loadLayout(saved);</code></pre>\r
             <code style="font-size: 10px; color:var(--text-secondary,#64748b);">rain-columns="3"</code>\r
           </div>\r
         </div>\r
-      </div>`}],masonry:[{title:`🎮 Interactive Masonry Playground`,description:`Adjust columns, gap and category filter to preview the masonry layout live.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;">\r
-          <span style="font-size:22px;">🎮</span> Interactive Masonry Playground\r
-        </h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:24px;">Adjust columns, gap and category filter to preview the masonry layout live.</p>\r
-\r
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;padding:20px;background:var(--bg-secondary);border-radius:12px;border:1px solid var(--border-default);margin-bottom:24px;">\r
-          <ui-dropdown id="pgCols" label="Columns" value="3" options='[{"label":"1","value":"1"},{"label":"2","value":"2"},{"label":"3","value":"3"},{"label":"4","value":"4"}]'></ui-dropdown>\r
-          <ui-dropdown id="pgCat" label="Category" value="all" options='[{"label":"All","value":"all"},{"label":"Nature","value":"nature"},{"label":"Urban","value":"urban"},{"label":"Animals","value":"animals"},{"label":"Travel","value":"travel"}]'></ui-dropdown>\r
-          <ui-dropdown id="pgSort" label="Sort By" value="none" options='[{"label":"Default","value":"none"},{"label":"Most Liked","value":"likes"},{"label":"Most Viewed","value":"views"},{"label":"A–Z","value":"alpha"}]'></ui-dropdown>\r
-        </div>\r
-\r
-        <div id="pgGrid"></div>\r
+      </div>`}],masonry:[{title:`🖼️ Fluid Masonry Gallery`,description:`Natural waterfall layout with hover overlays and one-click lightbox.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+    
+      <div style="flex:1;min-width:0;">
+        
+    <div class="ms-card" data-id="1" data-idx="0"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_forest_1.png" alt="Alpine Sunrise" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
       </div>
-<script>
-(function() {
-  function refresh() {\r
-      const cols = parseInt(document.getElementById('pgCols')?.value || '3');\r
-      const cat  = document.getElementById('pgCat')?.value || 'all';\r
-      const sort = document.getElementById('pgSort')?.value || 'none';\r
-      let photos = [...PHOTOS];\r
-      if (cat !== 'all') photos = photos.filter(p => p.category === cat);\r
-      if (sort === 'likes') photos.sort((a, b) => b.likes - a.likes);\r
-      if (sort === 'views') photos.sort((a, b) => parseFloat(b.views) - parseFloat(a.views));\r
-      if (sort === 'alpha') photos.sort((a, b) => a.title.localeCompare(b.title));\r
-      const grid = document.getElementById('pgGrid');\r
-      if (grid) grid.innerHTML = renderMasonryGrid(photos, cols, { showLightbox: true });\r
-    }\r
-\r
-    setTimeout(() => {\r
-      ['pgCols','pgCat','pgSort'].forEach(id => {\r
-        document.getElementById(id)?.addEventListener('dropdownChange', refresh);\r
-      });\r
-      refresh();\r
-    }, 150);
-})();
-<\/script>`},{title:`🖼️ Fluid Masonry Gallery`,description:`Natural waterfall layout with hover overlays and one-click lightbox.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">🖼️</span> Fluid Masonry Gallery</h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:24px;">Natural waterfall layout with hover overlays and one-click lightbox.</p>\r
-        \${renderMasonryGrid(PHOTOS, 3, { showLightbox: true })}\r
-      </div>`},{title:`🔍 Categorized & Searchable`,description:`Filter by category or search across photo titles and tags.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">🔍</span> Categorized & Searchable</h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:20px;">Filter by category or search across photo titles and tags.</p>\r
-\r
-        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px;">\r
-          <div style="display:flex;gap:8px;flex-wrap:wrap;" id="filterBtns">\r
-            \${FILTER_OPTIONS.map(f => 
-<script>
-(function() {
-  <button id="fb_\${f.key}" onclick="window._masonryFilter('\${f.key}')"\r
-                style="padding:6px 16px;border-radius:20px;border:2px solid \${f.color};cursor:pointer;font-size:13px;font-weight:600;\r
-                  background:\${f.key === 'all' ? f.color : 'transparent'};color:\${f.key === 'all' ? 'white' : f.color};\r
-                  transition:all 0.2s;">\r
-                \${f.label}\r
-              </button>\`).join('')}\r
-          </div>\r
-          <div style="flex:1;min-width:200px;max-width:280px;">\r
-            <input id="masonrySearch" type="text" placeholder="🔍 Search photos…"\r
-              oninput="window._masonrySearch(this.value)"\r
-              style="width:100%;padding:8px 14px;border:1.5px solid var(--border-default,#e5e7eb);border-radius:20px;font-size:13px;\r
-                background:var(--bg-secondary);color:var(--text-primary);outline:none;box-sizing:border-box;\r
-                transition:border-color 0.2s;"\r
-              onfocus="this.style.borderColor='#6366f1'" onblur="this.style.borderColor='var(--border-default,#e5e7eb)'">\r
-          </div>\r
-        </div>\r
-\r
-        <div id="filteredCount" style="font-size:12px;color:var(--text-muted);margin-bottom:16px;">\${PHOTOS.length} photos</div>\r
-        <div id="filteredGrid">\${renderMasonryGrid(PHOTOS, 3, { showLightbox: true })}</div>\r
-      </div>\`;\r
-\r
-    function applyFilter() {\r
-      let photos = [...PHOTOS];\r
-      if (activeFilter !== 'all') photos = photos.filter(p => p.category === activeFilter);\r
-      if (searchText) {\r
-        const q = searchText.toLowerCase();\r
-        photos = photos.filter(p => p.title.toLowerCase().includes(q) || p.tags.some(t => t.includes(q)) || p.category.includes(q));\r
-      }\r
-      const grid = document.getElementById('filteredGrid');\r
-      const count = document.getElementById('filteredCount');\r
-      if (grid) grid.innerHTML = renderMasonryGrid(photos, 3, { showLightbox: true });\r
-      if (count) count.textContent = \`\${photos.length} photo\${photos.length !== 1 ? 's' : ''}\`;\r
-    }\r
-\r
-    window._masonryFilter = function(key) {\r
-      activeFilter = key;\r
-      FILTER_OPTIONS.forEach(f => {\r
-        const btn = document.getElementById('fb_' + f.key);\r
-        if (!btn) return;\r
-        btn.style.background = key === f.key ? f.color : 'transparent';\r
-        btn.style.color = key === f.key ? 'white' : f.color;\r
-      });\r
-      applyFilter();\r
-    };\r
-    window._masonrySearch = function(val) {\r
-      searchText = val;\r
-      applyFilter();\r
-    };
-})();
-<\/script>`},{title:`✅ Selection & Batch Actions`,description:`Click the checkbox on hover to select photos. Use Ctrl+A to select all.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;flex-wrap:wrap;gap:12px;">\r
-          <div>\r
-            <h3 style="margin:0 0 6px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">✅</span> Selection & Batch Actions</h3>\r
-            <p style="color:var(--text-secondary);margin:0;">Click the checkbox on hover to select photos. Use Ctrl+A to select all.</p>\r
-          </div>\r
-          <div id="selBadge" style="padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;\r
-            background:var(--bg-secondary);color:var(--text-muted);border:1px solid var(--border-default);\r
-            white-space:nowrap;transition:all 0.3s;">0 photos selected</div>\r
-        </div>\r
-\r
-        <div id="batchBar" style="display:none;gap:10px;align-items:center;padding:12px 16px;\r
-          background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:10px;margin-bottom:20px;">\r
-          <span style="color:white;font-size:13px;font-weight:600;flex:1;" id="batchLabel"></span>\r
-          <button onclick="window._masonrySelected=new Set();window._masonryRenderAll()" style="padding:6px 14px;border-radius:6px;background:rgba(255,255,255,0.2);border:none;color:white;cursor:pointer;font-size:12px;font-weight:600;">Deselect All</button>\r
-          <button onclick="var n=window._masonrySelected.size;window._masonrySelected=new Set(Array.from({length:window._masonryPhotos.length},(_,i)=>i));window._masonryRenderAll()" style="padding:6px 14px;border-radius:6px;background:rgba(255,255,255,0.2);border:none;color:white;cursor:pointer;font-size:12px;font-weight:600;">Select All</button>\r
-          <button onclick="alert('Downloading '+window._masonrySelected.size+' photos!')" style="padding:6px 14px;border-radius:6px;background:white;border:none;color:#6366f1;cursor:pointer;font-size:12px;font-weight:700;">⬇ Download</button>\r
-          <button onclick="if(confirm('Delete '+window._masonrySelected.size+' photos?')){window._masonrySelected=new Set();window._masonryRenderAll()}" style="padding:6px 14px;border-radius:6px;background:rgba(239,68,68,0.85);border:none;color:white;cursor:pointer;font-size:12px;font-weight:700;">🗑 Delete</button>\r
-        </div>\r
-\r
-        <div id="selectableGrid"></div>\r
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Alpine Sunrise</h4>
+          <ui-tag size="sm" color="success" variant="filled" label="NATURE" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#mountains"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#dawn"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 2,847</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 14.2k</span>
+        </div>
       </div>
-<script>
-(function() {
-  );\r
-        if (card) {\r
-          card.style.outline = '3px solid #6366f1';\r
-          const cb = card.querySelector('.ms-checkbox');\r
-          if (cb) {\r
-            cb.style.background = '#6366f1';\r
-            cb.style.borderColor = '#6366f1';\r
-            cb.innerHTML = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';\r
-          }\r
-        }\r
-      });\r
-      if (badge) {\r
-        const n = window._masonrySelected.size;\r
-        badge.textContent = \`\${n} photo\${n !== 1 ? 's' : ''} selected\`;\r
-        badge.style.background = n > 0 ? '#6366f1' : 'var(--bg-secondary)';\r
-        badge.style.color = n > 0 ? 'white' : 'var(--text-muted)';\r
-      }\r
-      const batchBar = document.getElementById('batchBar');\r
-      if (batchBar) batchBar.style.display = window._masonrySelected.size > 0 ? 'flex' : 'none';\r
-    }\r
-\r
-    window._masonryToggle = function(idx) {\r
-      if (window._masonrySelected.has(idx)) {\r
-        window._masonrySelected.delete(idx);\r
-      } else {\r
-        window._masonrySelected.add(idx);\r
-      }\r
-      renderAll();\r
-    };\r
-\r
-    c.innerHTML = \`\r
-      <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;flex-wrap:wrap;gap:12px;">\r
-          <div>\r
-            <h3 style="margin:0 0 6px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">✅</span> Selection & Batch Actions</h3>\r
-            <p style="color:var(--text-secondary);margin:0;">Click the checkbox on hover to select photos. Use Ctrl+A to select all.</p>\r
-          </div>\r
-          <div id="selBadge" style="padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;\r
-            background:var(--bg-secondary);color:var(--text-muted);border:1px solid var(--border-default);\r
-            white-space:nowrap;transition:all 0.3s;">0 photos selected</div>\r
-        </div>\r
-\r
-        <div id="batchBar" style="display:none;gap:10px;align-items:center;padding:12px 16px;\r
-          background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:10px;margin-bottom:20px;">\r
-          <span style="color:white;font-size:13px;font-weight:600;flex:1;" id="batchLabel"></span>\r
-          <button onclick="window._masonrySelected=new Set();window._masonryRenderAll()" style="padding:6px 14px;border-radius:6px;background:rgba(255,255,255,0.2);border:none;color:white;cursor:pointer;font-size:12px;font-weight:600;">Deselect All</button>\r
-          <button onclick="var n=window._masonrySelected.size;window._masonrySelected=new Set(Array.from({length:window._masonryPhotos.length},(_,i)=>i));window._masonryRenderAll()" style="padding:6px 14px;border-radius:6px;background:rgba(255,255,255,0.2);border:none;color:white;cursor:pointer;font-size:12px;font-weight:600;">Select All</button>\r
-          <button onclick="alert('Downloading '+window._masonrySelected.size+' photos!')" style="padding:6px 14px;border-radius:6px;background:white;border:none;color:#6366f1;cursor:pointer;font-size:12px;font-weight:700;">⬇ Download</button>\r
-          <button onclick="if(confirm('Delete '+window._masonrySelected.size+' photos?')){window._masonrySelected=new Set();window._masonryRenderAll()}" style="padding:6px 14px;border-radius:6px;background:rgba(239,68,68,0.85);border:none;color:white;cursor:pointer;font-size:12px;font-weight:700;">🗑 Delete</button>\r
-        </div>\r
-\r
-        <div id="selectableGrid"></div>\r
-      </div>\`;\r
-\r
-    window._masonryRenderAll = renderAll;\r
-    renderAll();
-})();
-<\/script>`},{title:`💀 Skeleton Loading State`,description:`Realistic animated placeholder tiles shown while content is being fetched. Toggle between loading and loaded states.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;flex-wrap:wrap;gap:12px;">\r
-          <div>\r
-            <h3 style="margin:0 0 6px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">💀</span> Skeleton Loading State</h3>\r
-            <p style="color:var(--text-secondary);margin:0;">Realistic animated placeholder tiles shown while content is being fetched. Toggle between loading and loaded states.</p>\r
-          </div>\r
-          <ui-button id="btnToggleSkeleton" variant="outline" color="warning">Toggle Loading</ui-button>\r
-        </div>\r
-\r
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">\r
-          <div>\r
-            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary,#64748b);margin:0 0 12px;">Loading State (<code>loading-state="true"</code>)</p>\r
-            <ui-masonry id="masonrySkeletonOn" layout-type="masonry" columns="2" gap="14" loading-state="true"></ui-masonry>\r
-          </div>\r
-          <div>\r
-            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary,#64748b);margin:0 0 12px;">Loaded State (normal)</p>\r
-            <ui-masonry id="masonrySkeletonOff" layout-type="masonry" columns="2" gap="14"></ui-masonry>\r
-          </div>\r
-        </div>\r
-\r
-        <div style="margin-top:32px;">\r
-          <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary,#64748b);margin:0 0 12px;">Full-width togglable (<code>loading-state</code> controlled via JS)</p>\r
-          <ui-masonry id="masonrySkeletonLive" layout-type="masonry" columns="3" gap="16" loading-state="true"></ui-masonry>\r
-        </div>\r
+    </div>
+    <div class="ms-card" data-id="4" data-idx="3"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_ocean_4.png" alt="Ocean Cliff Walk" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:3/4;
+            transition:transform 0.4s;"/>
       </div>
-<script>
-(function() {
-  ,\r
-      description: 'Loading...',\r
-      image: \`https://picsum.photos/400/\${[220,300,260,350,200,280,320,240,290][i % 9]}?random=\${i}\`,\r
-      category: ['nature','architecture','food','technology'][i % 4],\r
-    }));\r
-\r
-    c.innerHTML = \`\r
-      <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;flex-wrap:wrap;gap:12px;">\r
-          <div>\r
-            <h3 style="margin:0 0 6px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">💀</span> Skeleton Loading State</h3>\r
-            <p style="color:var(--text-secondary);margin:0;">Realistic animated placeholder tiles shown while content is being fetched. Toggle between loading and loaded states.</p>\r
-          </div>\r
-          <ui-button id="btnToggleSkeleton" variant="outline" color="warning">Toggle Loading</ui-button>\r
-        </div>\r
-\r
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">\r
-          <div>\r
-            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary,#64748b);margin:0 0 12px;">Loading State (<code>loading-state="true"</code>)</p>\r
-            <ui-masonry id="masonrySkeletonOn" layout-type="masonry" columns="2" gap="14" loading-state="true"></ui-masonry>\r
-          </div>\r
-          <div>\r
-            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary,#64748b);margin:0 0 12px;">Loaded State (normal)</p>\r
-            <ui-masonry id="masonrySkeletonOff" layout-type="masonry" columns="2" gap="14"></ui-masonry>\r
-          </div>\r
-        </div>\r
-\r
-        <div style="margin-top:32px;">\r
-          <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary,#64748b);margin:0 0 12px;">Full-width togglable (<code>loading-state</code> controlled via JS)</p>\r
-          <ui-masonry id="masonrySkeletonLive" layout-type="masonry" columns="3" gap="16" loading-state="true"></ui-masonry>\r
-        </div>\r
-      </div>\`;\r
-\r
-    setTimeout(() => {\r
-      const off = document.getElementById('masonrySkeletonOff');\r
-      const live = document.getElementById('masonrySkeletonLive');\r
-      if (off) off.items = skeletonItems;\r
-      if (live) live.items = skeletonItems;\r
-\r
-      document.getElementById('btnToggleSkeleton')?.addEventListener('click', () => {\r
-        const el = document.getElementById('masonrySkeletonLive');\r
-        if (el) {\r
-          el.loadingState = !el.loadingState;\r
-          document.getElementById('btnToggleSkeleton').label = el.loadingState ? 'Show Loaded' : 'Show Loading';\r
-        }\r
-      });\r
-    }, 150);
-})();
-<\/script>`},{title:`📦 Product Grid (layout-type="grid")`,description:`Equal-height grid layout ideal for product listings. Category filter and multi-select batch actions included.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">📦</span> Product Grid (<code>layout-type="grid"</code>)</h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:20px;">Equal-height grid layout ideal for product listings. Category filter and multi-select batch actions included.</p>\r
-        <ui-masonry id="masonryProductGrid"\r
-          layout-type="grid"\r
-          columns="4"\r
-          gap="20"\r
-          show-filters="true"\r
-          selectable="true"\r
-          multi-select="true"\r
-          show-batch-actions="true"\r
-          lightbox="true">\r
-        </ui-masonry>\r
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Ocean Cliff Walk</h4>
+          <ui-tag size="sm" color="danger" variant="filled" label="TRAVEL" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#coast"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#cliffs"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 4,201</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 31.0k</span>
+        </div>
       </div>
-<script>
-(function() {
-  ,\r
-      image: \`https://picsum.photos/400/300?random=\${i + 100}\`,\r
-      category: categories[i % 4],\r
-      height: 300,\r
-    }));\r
-\r
-    const filterOpts = categories.map(k => ({ key: k, label: k.charAt(0).toUpperCase() + k.slice(1) }));\r
-\r
-    c.innerHTML = \`\r
-      <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">📦</span> Product Grid (<code>layout-type="grid"</code>)</h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:20px;">Equal-height grid layout ideal for product listings. Category filter and multi-select batch actions included.</p>\r
-        <ui-masonry id="masonryProductGrid"\r
-          layout-type="grid"\r
-          columns="4"\r
-          gap="20"\r
-          show-filters="true"\r
-          selectable="true"\r
-          multi-select="true"\r
-          show-batch-actions="true"\r
-          lightbox="true">\r
-        </ui-masonry>\r
-      </div>\`;\r
-\r
-    setTimeout(() => {\r
-      const el = document.getElementById('masonryProductGrid');\r
-      if (!el) return;\r
-      el.filterOptions = filterOpts;\r
-      el.items = productItems;\r
-    }, 150);
-})();
-<\/script>`},{title:`📰 News Feed (layout-type="columns")`,description:`Column-based layout for articles and blog posts. Items fill columns top-to-bottom for a natural reading flow.`,html:`<div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">📰</span> News Feed (<code>layout-type="columns"</code>)</h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:20px;">Column-based layout for articles and blog posts. Items fill columns top-to-bottom for a natural reading flow.</p>\r
-        <ui-masonry id="masonryNewsFeed"\r
-          layout-type="columns"\r
-          columns="3"\r
-          gap="24"\r
-          show-filters="true"\r
-          lazy-load="true">\r
-        </ui-masonry>\r
+    </div>
+    <div class="ms-card" data-id="7" data-idx="6"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/slide3.png" alt="Eagle in Flight" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
       </div>
-<script>
-(function() {
-  ,\r
-      image: \`https://picsum.photos/600/\${[200,260,220,300,240,280][i % 6]}?random=\${i + 200}\`,\r
-      category: topics[i % 4],\r
-    }));\r
-\r
-    const filterOpts = topics.map(k => ({ key: k, label: k.charAt(0).toUpperCase() + k.slice(1) }));\r
-\r
-    c.innerHTML = \`\r
-      <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">\r
-        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">📰</span> News Feed (<code>layout-type="columns"</code>)</h3>\r
-        <p style="color:var(--text-secondary);margin-bottom:20px;">Column-based layout for articles and blog posts. Items fill columns top-to-bottom for a natural reading flow.</p>\r
-        <ui-masonry id="masonryNewsFeed"\r
-          layout-type="columns"\r
-          columns="3"\r
-          gap="24"\r
-          show-filters="true"\r
-          lazy-load="true">\r
-        </ui-masonry>\r
-      </div>\`;\r
-\r
-    setTimeout(() => {\r
-      const el = document.getElementById('masonryNewsFeed');\r
-      if (!el) return;\r
-      el.filterOptions = filterOpts;\r
-      el.items = newsItems;\r
-    }, 150);
-})();
-<\/script>`}],"meter-group":[{title:`Storage Usage`,description:``,html:`<div style="margin-bottom: 30px;">\r
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Eagle in Flight</h4>
+          <ui-tag size="sm" color="warning" variant="filled" label="ANIMALS" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#bird"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#sky"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 1,876</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 12.9k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="10" data-idx="9"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_lake_2.png" alt="Brooklyn Bridge" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Brooklyn Bridge</h4>
+          <ui-tag size="sm" color="info" variant="filled" label="URBAN" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#nyc"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#bridge"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 4,478</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 35.2k</span>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div style="flex:1;min-width:0;">
+        
+    <div class="ms-card" data-id="2" data-idx="1"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_desert_3.png" alt="Neon Cityscape" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:3/4;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Neon Cityscape</h4>
+          <ui-tag size="sm" color="info" variant="filled" label="URBAN" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#night"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#city"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 1,923</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 9.8k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="5" data-idx="4"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/slide1.png" alt="Cherry Blossoms" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Cherry Blossoms</h4>
+          <ui-tag size="sm" color="success" variant="filled" label="NATURE" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#flowers"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#spring"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 5,674</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 41.5k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="8" data-idx="7"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_desert_3.png" alt="Santorini Sunset" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Santorini Sunset</h4>
+          <ui-tag size="sm" color="danger" variant="filled" label="TRAVEL" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#greece"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#sunset"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 6,102</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 48.3k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="11" data-idx="10"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_ocean_4.png" alt="Polar Bear Swim" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:3/4;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Polar Bear Swim</h4>
+          <ui-tag size="sm" color="warning" variant="filled" label="ANIMALS" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#arctic"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#polar"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 2,654</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 19.1k</span>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div style="flex:1;min-width:0;">
+        
+    <div class="ms-card" data-id="3" data-idx="2"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_lake_2.png" alt="Red Fox at Dusk" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Red Fox at Dusk</h4>
+          <ui-tag size="sm" color="warning" variant="filled" label="ANIMALS" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#wildlife"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#fox"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 3,512</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 22.1k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="6" data-idx="5"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/slide2.png" alt="Tokyo Alley" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:3/4;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Tokyo Alley</h4>
+          <ui-tag size="sm" color="info" variant="filled" label="URBAN" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#japan"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#street"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 2,103</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 17.4k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="9" data-idx="8"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/nature_forest_1.png" alt="Ancient Redwoods" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:3/4;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Ancient Redwoods</h4>
+          <ui-tag size="sm" color="success" variant="filled" label="NATURE" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#forest"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#trees"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 3,890</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 28.7k</span>
+        </div>
+      </div>
+    </div>
+    <div class="ms-card" data-id="12" data-idx="11"
+      style="border-radius:12px;overflow:hidden;background:var(--bg-primary);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);break-inside:avoid;
+        margin-bottom:16px;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;position:relative;
+        ">
+
+      <div class="ms-img-wrap" style="position:relative;overflow:hidden;">
+        <img src="/atom/assets/images/slide1.png" alt="Amalfi Coast Drive" loading="lazy"
+          style="width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:4/3;
+            transition:transform 0.4s;"/>
+      </div>
+
+      <div style="padding:12px 14px 14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+          <h4 style="margin:0;font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.3;">Amalfi Coast Drive</h4>
+          <ui-tag size="sm" color="danger" variant="filled" label="TRAVEL" style="margin-left:6px;flex-shrink:0;"></ui-tag>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+          <ui-tag size="sm" color="secondary" variant="outlined" label="#italy"></ui-tag><ui-tag size="sm" color="secondary" variant="outlined" label="#coast"></ui-tag>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;color:var(--text-muted);font-size:11px;">
+          <span style="display:flex;align-items:center;gap:4px;">👍 5,233</span>
+          <span style="display:flex;align-items:center;gap:4px;">👁️ 40.8k</span>
+        </div>
+      </div>
+    </div>
+      </div>
+  </div>
+    </div>`},{title:`💀 Skeleton Loading State`,description:`Realistic animated placeholder tiles shown while content is being fetched.`,html:`
+    <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+        <div>
+          <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);margin:0 0 12px;">Loading State</p>
+          <ui-masonry layout-type="masonry" columns="2" gap="14" loading-state="true"></ui-masonry>
+        </div>
+      </div>
+    </div>
+  `},{title:`📦 Product Grid`,description:`Equal-height grid layout ideal for product listings.`,html:`
+    <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">
+      <ui-masonry layout-type="grid" columns="4" gap="20" show-filters="true" selectable="true" multi-select="true" show-batch-actions="true" lightbox="true"></ui-masonry>
+      <script>
+        (function() {
+          const scriptEl = document.currentScript;
+          setTimeout(() => {
+            const el = scriptEl.previousElementSibling;
+            if(el) {
+              el.items = [
+                { id:1, title:'Wireless Headphones', description:'$49.99', image:'/atom/assets/images/slide1.png', category:'electronics', height: 300 },
+                { id:2, title:'Leather Jacket', description:'$129.00', image:'/atom/assets/images/slide2.png', category:'fashion', height: 300 },
+                { id:3, title:'Smart Lamp', description:'$39.99', image:'/atom/assets/images/slide3.png', category:'home', height: 300 },
+                { id:4, title:'Running Shoes', description:'$89.00', image:'/atom/assets/images/nature_forest_1.png', category:'sports', height: 300 }
+              ];
+              el.filterOptions = [
+                { key:'electronics', label:'Electronics' },
+                { key:'fashion', label:'Fashion' },
+                { key:'home', label:'Home' },
+                { key:'sports', label:'Sports' }
+              ];
+            }
+          }, 100);
+        })();
+      <\/script>
+    </div>
+  `},{title:`📰 News Feed`,description:`Column-based layout for articles and blog posts.`,html:`
+    <div class="demo-block" style="background:var(--bg-primary);border-radius:16px;padding:28px;border:1px solid var(--border-default);">
+      <ui-masonry layout-type="columns" columns="3" gap="24" show-filters="true" lazy-load="true"></ui-masonry>
+      <script>
+        (function() {
+          const scriptEl = document.currentScript;
+          setTimeout(() => {
+            const el = scriptEl.previousElementSibling;
+            if(el) {
+              el.items = [
+                { id:1, title:'The Future of AI', description:'By Alex Morgan', image:'/atom/assets/images/nature_desert_3.png', category:'technology' },
+                { id:2, title:'Brutalist Design', description:'By Sam Chen', image:'/atom/assets/images/nature_lake_2.png', category:'design' },
+                { id:3, title:'Remote Work Trends', description:'By Jordan Lee', image:'/atom/assets/images/nature_ocean_4.png', category:'business' }
+              ];
+              el.filterOptions = [
+                { key:'technology', label:'Technology' },
+                { key:'design', label:'Design' },
+                { key:'business', label:'Business' }
+              ];
+            }
+          }, 100);
+        })();
+      <\/script>
+    </div>
+  `}],"meter-group":[{title:`Storage Usage`,description:``,html:`<div style="margin-bottom: 30px;">\r
         <h4>Storage Usage</h4>\r
         <ui-meter-group id="basicMeter" show-legend="true"></ui-meter-group>\r
       </div>\r
